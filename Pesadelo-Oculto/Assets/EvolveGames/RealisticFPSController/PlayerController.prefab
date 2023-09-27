@@ -778,7 +778,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &4434987455181619956
 Animator:
-  serializedVersion: 5
+  serializedVersion: 4
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -795,8 +795,7 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorStateOnDisable: 0
-  m_WriteDefaultValuesOnDisable: 0
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &4434987455585117538
 GameObject:
   m_ObjectHideFlags: 0
@@ -899,17 +898,9 @@ Camera:
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
-  m_Iso: 200
-  m_ShutterSpeed: 0.005
-  m_Aperture: 16
-  m_FocusDistance: 10
-  m_FocalLength: 50
-  m_BladeCount: 5
-  m_Curvature: {x: 2, y: 11}
-  m_BarrelClipping: 0.25
-  m_Anamorphism: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -1149,17 +1140,9 @@ CharacterController:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4582019824381016673}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Height: 2.2
   m_Radius: 0.5
   m_SlopeLimit: 45
@@ -1224,8 +1207,20 @@ MonoBehaviour:
   ani: {fileID: 4434987455181619956}
   ItemCanvasLogo: {fileID: 0}
   LoopItems: 1
-  Items: []
-  ItemLogos: []
+  Items:
+  - {fileID: 997515318630210110}
+  - {fileID: 7772200526822353724}
+  - {fileID: 3551011308772179023}
+  - {fileID: 1452507092463252298}
+  - {fileID: 6547871284852995402}
+  - {fileID: 3552588340761093964}
+  ItemLogos:
+  - {fileID: 21300000, guid: 19576e2f30e2ebf4cb23a21d518e3138, type: 3}
+  - {fileID: 21300000, guid: c674667b40c9bf74d87dc888ebfc492b, type: 3}
+  - {fileID: 21300000, guid: 1e50f56f6bf94184199c3d7b3f445273, type: 3}
+  - {fileID: 21300000, guid: cb14d8fdbcfcc7b469ace4f14321bed9, type: 3}
+  - {fileID: 21300000, guid: 39f33caad60ffff409bdd3dd8c27f4bf, type: 3}
+  - {fileID: 21300000, guid: d63e7542ae3161349891bea9c700f922, type: 3}
   ItemIdInt: 0
   DefiniteHide: 0
 --- !u!136 &4434987454404763374
@@ -1236,17 +1231,8 @@ CapsuleCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4582019824381016673}
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
   m_IsTrigger: 1
-  m_ProvidesContacts: 0
   m_Enabled: 1
-  serializedVersion: 2
   m_Radius: 0.47404212
   m_Height: 2.1625967
   m_Direction: 1
